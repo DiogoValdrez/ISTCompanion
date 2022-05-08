@@ -1,0 +1,32 @@
+{
+  "name": "ISTCompanion",
+  "description": "IST helper for every student in need",
+  "version": "0.1",
+  "manifest_version": 3,
+
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": ["https://id.tecnico.ulisboa.pt/*"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://id.tecnico.ulisboa.pt/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "imgs/IST_Logo.png",
+    "default_title": "ISTCompanion"
+  },
+  "icons":{
+    "16": "imgs/IST_Logo.png",
+    "32": "imgs/IST_Logo.png",
+    "48": "imgs/IST_Logo.png",
+    "128": "imgs/IST_Logo.png"
+  }
+}
