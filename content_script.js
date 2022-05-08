@@ -6,7 +6,7 @@ chrome.storage.sync.get(['toggle'], function(result, togglevalue){
             document.getElementById('username').value = result.username;
             chrome.storage.sync.get(['password'], function(result){
                 document.getElementById('password').value = result.password;
-                document.getElementById('submit-istid').click();
+                document.getElementsByName('submit-istid')[0].click();
             });
         });
     }
