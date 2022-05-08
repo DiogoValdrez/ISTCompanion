@@ -16,24 +16,22 @@ savebutton.addEventListener("click", async () => {
 
 togglebutton.addEventListener("click", async () => {
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-    
     chrome.scripting.executeScript({
       target: { tabId: tab.id },
       func: changeToggleValue,
-    });
-
-    /*
-    if(togglevalue){
-        togglebutton.innerText = "ON";
-    }else{
-        togglebutton.innerText= "OFF";
-    }*/
+    });   
 });
 
 
 function changeToggleValue() {
     chrome.storage.sync.get(['toggle'], function(result){
         console.log('Value currently is ' + !result.toggle);
+        /*console.log(window['togglebutton'])
+        if(togglevalue){
+            window['togglebutton'].innerText = "ON";
+        }else{
+            window['togglebutton'].innerText= "OFF";
+        }*/
         chrome.storage.sync.set({'toggle': !result.toggle}, function(){});
     });
 }
