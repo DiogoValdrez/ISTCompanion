@@ -1,7 +1,7 @@
 {
   "name": "ISTCompanion",
   "description": "IST helper for every student in need",
-  "version": "0.1",
+  "version": "0.2",
   "manifest_version": 3,
 
   "permissions": ["scripting", "activeTab", "storage"],
@@ -19,7 +19,7 @@
   ],
 
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "main.html",
     "default_icon": "imgs/IST_Logo.png",
     "default_title": "ISTCompanion"
   },

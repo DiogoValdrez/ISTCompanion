@@ -1,0 +1,45 @@
+html { 
+	min-width: 150px;
+	min-height: 150px;
+	color: whitesmoke;
+	background: rgb(31, 31, 31) !important; 
+	zoom: 1.3; 
+}
+body { 
+	background-color: rgb(31, 31, 31); 
+	background-image: none !important; 
+}
+h1{
+	text-align: center;
+}
+p{
+	zoom: 1.3; 
+}
+input, select, textarea, button {
+	zoom: 1.3; 
+	color: whitesmoke; 
+	background-color: rgb(31, 31, 31); 
+}
+font { 
+	color: whitesmoke; 
+}
+button{
+    outline-color: transparent;
+    outline-style: none;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: rgb(78, 68, 206);
+  }
+button:hover:enabled {
+    background: rgb(66, 58, 169);
+}
+.options{
+	vertical-align: middle;
+	margin-top: 10px;
+}
+.connection{
+	zoom: 0.8;
+	color: #aaa;
+}
