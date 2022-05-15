@@ -1,6 +1,6 @@
 {
   "name": "ISTCompanion",
-  "description": "IST helper for every student in need",
+  "description": "IST helper for every student in need, for now it helps you with an auto-login in fenix, later it will have more features",
   "version": "0.2",
   "manifest_version": 3,
 
