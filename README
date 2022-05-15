@@ -1,8 +1,8 @@
 HOW TO USE:
 
-Get the file
+Get the file (unpack if its .zip)
 Go to chrome://extensions/
-Togle "Developer mode" (top right corner)
+Toggle "Developer mode" (top right corner)
 Click "Load Unpacked"
 Select this folder
 
